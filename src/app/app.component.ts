@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import {AfterViewInit,Renderer2, Component,OnDestroy, OnInit, ViewContainerRef} from "@angular/core";
+import {Http,Headers} from "@angular/http";
+import { Router,NavigationEnd,ActivatedRoute } from '@angular/router';
+import { ToastsManager,Toast } from 'ng2-toastr/ng2-toastr';
 
-@Component({
+
+  @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<router-outlet></router-outlet>`
 })
-export class AppComponent {
-  title = 'app works!';
+export class AppComponent implements OnInit, OnDestroy {
+ 
+  activeToast:Toast;
+  t:any;
+  constructor(private toast: ToastsManager
+  ) { 
+  }
+  
+ ngOnDestroy(){
+    
+  }
+  ngOnInit() {
+   
+  }
 }
