@@ -8,6 +8,10 @@ import { ToastModule} from 'ng2-toastr/ng2-toastr';
 import { Routes, RouterModule } from '@angular/router'; 
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { StarterComponent } from './pages/starter/starter.component';
+import { WordCounterComponent } from './pages/starter/word-counter.component';
+import { WygEditorModule } from 'ng-wysiwygjs';
+
 import {WordCounter} from "./services/services.barrel"
 const routes: Routes = [
  { 
@@ -21,8 +25,8 @@ const routes: Routes = [
         },
         {
           path: 'main',
-          loadChildren: './pages/starter/starter.module#StarterModule',
-         }
+          component: StarterComponent
+        }
       ]
     }
 ];
@@ -30,7 +34,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent, 
-    LayoutComponent
+    LayoutComponent,StarterComponent,WordCounterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,8 @@ const routes: Routes = [
     HttpModule, 
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+		WygEditorModule
   ],
   providers: [
     WordCounter,
