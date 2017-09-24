@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import { StarterComponent } from './starter.component';
 import { WordCounterComponent } from './word-counter.component';
+import { WygEditorModule } from 'ng-wysiwygjs';
 
 
 const routes: Routes = [{
@@ -21,7 +21,7 @@ const routes: Routes = [{
     	FormsModule,
     	CommonModule, 
 		RouterModule.forChild(routes),
-		FroalaEditorModule.forRoot(), FroalaViewModule.forRoot()
+		WygEditorModule
     ],
 	declarations: [StarterComponent,WordCounterComponent]
 })

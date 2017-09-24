@@ -1,10 +1,11 @@
 import { Component, AfterViewInit,OnInit } from '@angular/core';
 import {WordCounter} from "../../services/services.barrel"
+import { WygEditorComponent } from 'ng-wysiwygjs';
 
 declare var $:any;
 @Component({
 	templateUrl: './starter.component.html',
-	styleUrls:["./starter.component.css"]
+	styleUrls:["./starter.component.css"],
 })
 export class StarterComponent {
 	

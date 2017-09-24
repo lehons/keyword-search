@@ -28,9 +28,8 @@
         "assets/css/animate.css",
         "assets/css/skin-black.css",
         "../node_modules/ng2-toastr/bundles/ng2-toastr.min.css",
-        "../node_modules/froala-editor/css/froala_editor.pkgd.min.css",
-        "../node_modules/froala-editor/css/froala_style.min.css",
-        "styles.css"
+        "styles.css",
+        "../node_modules/prismjs/themes/prism-okaidia.css"
       ],
       "scripts": [
         "../node_modules/admin-lte/plugins/jQuery/jquery-2.2.3.min.js",
@@ -39,8 +38,11 @@
         "../node_modules/admin-lte/plugins/fastclick/fastclick.js",
         "../node_modules/admin-lte/plugins/iCheck/icheck.min.js",
         "../node_modules/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js",
-        "../node_modules/froala-editor/js/froala_editor.pkgd.min.js",
         "assets/js/app.js",
+        "../node_modules/wysiwyg.js/src/wysiwyg.js",
+        "../node_modules/wysiwyg.js/src/wysiwyg-editor.js",
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-typescript.js",
         "../node_modules/admin-lte/dist/js/demo.js"
       ],
       "environmentSource": "environments/environment.ts",

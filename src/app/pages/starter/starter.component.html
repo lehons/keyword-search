@@ -26,7 +26,7 @@
           </div>
           <!-- /.box-body -->
           <div class="box-footer clearfix no-border">
-              <div class="input-group">
+              <div class="input-group">                
                   <textarea class="form-control" rows="3" placeholder="Keyword" name="keyword" [(ngModel)]="keyword"></textarea>
                   <div class="input-group-btn">
                     <button type="button" class="btn btn-success" (click)="addKeyword()" style="margin-left: 5px;">
@@ -42,7 +42,7 @@
         <form action="#" method="post">          
           <div>
             <label>Text Entry</label>
-            <textarea [froalaEditor] [(ngModel)]="wordCounter.input" [(froalaModel)]="wordCounter.input" name="input" style="width: 100%; height: 60vh; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+            <wygeditor [(ngModel)]="wordCounter.input" name="testContent"></wygeditor>            
           </div>
         </form>
     </section>
